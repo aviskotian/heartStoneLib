@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "602261288799",
+    "project_id": "heartstonelib-53012",
+    "storage_bucket": "heartstonelib-53012.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:602261288799:android:0b87fcf2c99884620b68ea",
+        "android_client_info": {
+          "package_name": "com.aviskotian.heartstonelib"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "602261288799-uavppl4ifegtgd7pjd1m4il2n0541if7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiKnzvhC9gAS0eQ2kv4fIhzjdned3okrM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "602261288799-uavppl4ifegtgd7pjd1m4il2n0541if7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "602261288799-rcb65n1l1ouugoe8hrsp8arerk9afhsp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.aviskotian.heartstonelib"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

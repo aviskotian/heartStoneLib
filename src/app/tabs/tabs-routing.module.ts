@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { TabsPage } from './tabs.page';
-
+import { CardDeckPage } from '../card/card-deck/card-deck.page'
+import { CardListingPage } from '../card/card-listing/card-listing.page'; 
+import { CardDetailPage } from '../card/card-detail/card-detail.page';
+import { CardFavoritePage } from '../card/card-favorite/card-favorite.page';
 const routes: Routes = [
   {
     path: 'tabs',
@@ -20,15 +23,31 @@ const routes: Routes = [
         loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
       },
       {
+        path: 'card',
+        component: CardDeckPage
+      },
+      {
+        path: 'card/:cardId',
+        component: CardDetailPage
+      },
+      {
+        path: 'card/:cardDeckGroup/:cardDeck',
+        component: CardListingPage
+      },
+      {
+        path: 'favorite',
+        component: CardFavoritePage
+      },
+      {
         path: '',
-        redirectTo: '/tabs/tab1',
+        redirectTo: '/tabs/card',
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/tab1',
+    redirectTo: '/tabs/card',
     pathMatch: 'full'
   }
 ];
